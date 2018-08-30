@@ -1,0 +1,131 @@
+/* plugin/components/weatherbase/index.wxss */
+.bodyv{
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+/*当前的天气*/
+
+.nowv {
+  display: flex;
+  width: 100%;
+}
+
+.nowweathericonv {
+  height: 100%;
+  width: 60%;
+}
+
+.nowweathericon {
+  width: 410rpx;
+  height: 100%;
+  padding-top: 45rpx;
+}
+
+.nowweatherv {
+  width: 40%;
+  padding-top: 208rpx;
+  text-align: left;
+}
+
+.nowtmp {
+  font-size: 173rpx;
+  font-weight: 300;
+  color: #333;
+}
+
+.nowdatev {
+  font-size: 28rpx;
+  color: #575757;
+}
+
+.nowtmprange {
+  font-size: 28rpx;
+  color: #575757;
+}
+
+/*未来24小时天气*/
+
+.dayscrollview {
+  height: 200rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  padding-bottom: 22rpx;
+}
+
+.hourweatherv {
+  width: 118rpx;
+  height: 200rpx;
+  display: inline-block;
+  color: #0074c8;
+  font-size: 28rpx;
+  text-align: center;
+}
+
+.houricon {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+/*未来一周的天气*/
+
+.weekscrollview {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  background-color: #fafafa;
+  padding-top: 68rpx;
+}
+
+.dayweatherv {
+  width: 170rpx;
+  height: 200rpx;
+  display: inline-block;
+  color: #0074c8;
+  font-size: 28rpx;
+  text-align: center;
+}
+
+.daytxt {
+  font-size: 32rpx;
+  color: #cfcfcf;
+}
+
+.dayicon {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.daytmpv {
+  display: flex;
+  justify-content: center;
+}
+
+.daymaxtmp {
+  color: #191c1f;
+  font-size: 29rpx;
+}
+
+.daymintmp {
+  color: #b6b7b8;
+  font-size: 29rpx;
+  margin-left: 20rpx;
+}
+
+.xianv {
+  width: 1rpx;
+  height: 116rpx;
+  background: #e5e5e9;
+  margin-top: -140rpx;
+}
+
+/*阴影部分*/
+
+.shadowv {
+  width: 100%;
+  height: 38rpx;
+  background: linear-gradient(360deg, rgba(238, 238, 238, 0) 0%, rgba(216, 216, 216, 1) 100%);
+}

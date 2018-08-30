@@ -1,0 +1,2 @@
+
+<weatherplus receiveData="{{weatherdata}}"/>

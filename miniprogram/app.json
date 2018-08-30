@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/test/index",
+    "pages/base/index",
+    "pages/index/index",
+    "pages/postion/index"
+  ],
+  "plugins": {
+    "myPlugin": {
+      "version": "dev",
+      "provider": "wx58334f7d6cc02969"
+    }
+  }
+}

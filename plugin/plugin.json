@@ -1,0 +1,8 @@
+{
+  "publicComponents": {
+    "weatherbase": "components/weatherbase/index",
+    "weather": "components/weather/index",
+    "weatherpostion": "components/weatherpostion/index"
+  },
+  "main": "index.js"
+}

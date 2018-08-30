@@ -1,0 +1,3 @@
+<!--pages/postion/index.wxml-->
+
+<weatherplus receiveData="{{setstyle}}"/>

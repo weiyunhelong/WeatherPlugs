@@ -1,0 +1,59 @@
+<!--plugin/components/weather/index.wxml-->
+<!--背景层-->
+<view style='height:{{winheight}}px;' class='backgroundv'>
+  <image src='{{backimg}}' class='backgroundtu'></image>
+</view>
+
+<!--天气情况-->
+<view class='bodyv' style='height:{{winheight}}px;background-color:{{backcolor}};color:{{fontcolor}};'>
+
+  <!--当前的天气-->
+  <view class='nowv' style='height:{{winheight*0.55}}px;'>
+    <view class='nowweathericonv'>
+      <image src='{{nowweather.icon}}' class='nowweathericon'></image>
+    </view>
+    <view class='nowweatherv'>
+      <view class='nowtmp'>{{nowweather.tmp}}°</view>
+      <view class='nowdatev'>
+        <text decode='true'>{{nowweather.date}}{{nowweather.week}} &nbsp;&nbsp;{{nowweather.weather}}</text>
+      </view>
+      <view class='nowtmprange'>
+        <text decode='true'>最高{{nowweather.max}}°最低{{nowweather.min}}°</text>
+      </view>
+    </view>
+  </view>
+
+  <!--当天时间段天气-->
+  <scroll-view class="dayscrollview" scroll-x="true" style='height:{{winheight*0.18}}px;'>
+    <block wx:for="{{dayweather}}" wx:key="item">
+      <view class='hourweatherv'>
+        <view class='hourtxt'>{{item.time}}</view>
+        <view class='houriconv'>
+          <image src='{{item.icon}}' class='houricon'></image>
+        </view>
+        <view class='hourtmp'>{{item.tmp}}°</view>
+      </view>
+    </block>
+  </scroll-view>
+
+  <!--阴影部分-->
+  <view class='shadowv'></view>
+  <!--未来一周天气-->
+  <scroll-view class="weekscrollview" scroll-x="true">
+    <block wx:for="{{weekweather}}" wx:key="item" wx:for-index="x">
+      <view class='dayweatherv'>
+        <view class='daytxt'>{{item.day}}</view>
+        <view class='dayiconv'>
+          <image src='{{item.icon}}' class='dayicon'></image>
+        </view>
+        <view class='daytmpv'>
+          <view class='daymaxtmp'>{{item.maxtmp}}</view>
+          <view class='daymintmp'>{{item.mintmp}}</view>
+        </view>
+        <view class='xianv' wx:if="{{weekweather.length!=x}}"></view>
+      </view>
+
+    </block>
+
+  </scroll-view>
+</view>

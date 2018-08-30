@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "weatherbase": "plugin://myPlugin/weatherbase"
+  }
+}

@@ -1,0 +1,5 @@
+<!--pages/test/index.wxml-->
+<button data-id='1' bindtap='godetial' type='default' style='margin-top:30rpx;'>基础版本</button>
+<button data-id='2' bindtap='godetial' type='primary' style='margin-top:30rpx;'>设置版本</button>
+<button data-id='3' bindtap='godetial' type='warn'    style='margin-top:30rpx;'>定位版本</button>
+
